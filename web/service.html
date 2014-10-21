@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>
+	<title>WEBSMARTVN.COM | Home </title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+	<!----start-top-nav-script---->
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+	        	var w = $(window).width();
+	        	if(w > 320 && menu.is(':hidden')) {
+	        		menu.removeAttr('style');
+	        	}
+	    	});
+		});
+	</script>
+	<!----//End-top-nav-script---->
+</head>
+<body>
+	<div class="wrap">
+		<!----start-container------>
+		<!----start-header---->
+		<div id="home" class="header">
+				<div class="container">
+					<!----start-top-nav---->
+					<nav class="top-nav">
+						<ul class="top-nav">
+							<li class=""><a href="about.html" >Giới thiệu</a></li>
+							<li class=""><a href="service.html" >Dịch vụ</a></li>
+							<li class=""><a href="guest.html" >Khách hàng</a></li>
+							<li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
+							<li class=""><a href="blog.html" >Bài viết</a></li>
+							<li class=""><a href="categoryweb.html" >Danh mục web</a></li>
+							<li class=""><a href="contact.html" >Liên hệ</a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon2.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+					<!----//End-top-nav---->
+				</div>
+		</div>
+		<div class="top-header">
+				<div class="container">
+					<p class="m_1"><span class="m_2"></span></p>
+					<div class="clear"> </div>
+				</div>
+		</div>
+		<!----//End-header---->
+		<!----start-about---->
+		<div id="home" class="content-top-grids-sv header">
+			<p class="wellcome-note-head-sv"><label>Chào mừng các bạn đến với <span>DỊCH VỤ WEBSMARTVN.COM</span>. </label>Chúng tôi chuyên thiết kế và lập trình web trong các lĩnh vực ngoài ra chúng tôi còn cung cấp một số dịch vụ khác nhằm chăm sóc khách hàng tốt hơn.</p>
+			<div class="wrap">
+					<div class="top-grid-sv page-scroll">
+						<div class="top-grid-head-sv">
+							<h3><span>Dịch vụ</span> Rửa xe miễn phí </h3>
+							<img src="images/t5.jpg" alt="" />
+						</div>
+						<div class="top-grid-info-sv">
+							<p>Với dàn HOT GIRL chân dài nhất được công ty chúng tôi tuyển chọn quý khách sẽ yên tâm và hài lòng nhất vơi dịch vụ của chúng tôi.</p>
+						</div>
+						<a href="#service1" class="scroll">Xem chi tiết</a>
+					</div>
+					<div class="top-grid-sv page-scroll">
+						<div class="top-grid-head-sv">
+							<h3><span>Dịch vụ</span> Rửa xe miễn phí </h3>
+							<img src="images/t2.jpg" alt="" />
+						</div>
+						<div class="top-grid-info-sv">
+							<p>Với dàn HOT GIRL chân dài nhất được công ty chúng tôi tuyển chọn quý khách sẽ yên tâm và hài lòng nhất vơi dịch vụ của chúng tôi.</p>
+						</div>
+						<a href="#service2" class="scroll" >Xem chi tiết</a>
+					</div>
+					<div class="top-grid-sv page-scroll">
+						<div class="top-grid-head-sv">
+							<h3><span>Dịch vụ</span> Rửa xe miễn phí </h3>
+							<img src="images/t3.jpg" alt="" />
+						</div>
+						<div class="top-grid-info-sv">
+							<p>Với dàn HOT GIRL chân dài nhất được công ty chúng tôi tuyển chọn quý khách sẽ yên tâm và hài lòng nhất vơi dịch vụ của chúng tôi.</p>
+						</div>
+						<a href="#service3" class="scroll">Xem chi tiết</a>
+					</div>
+					<div class="top-grid-sv last-grid-sv page-scroll">
+						<div class="top-grid-head-sv">
+							<h3><span>Dịch vụ</span> Rửa xe miễn phí </h3>
+							<img src="images/t4.jpg" alt="" />
+						</div>
+						<div class="top-grid-info-sv">
+							<p>Với dàn HOT GIRL chân dài nhất được công ty chúng tôi tuyển chọn quý khách sẽ yên tâm và hài lòng nhất vơi dịch vụ của chúng tôi.</p>
+						</div>
+						<a href="#service4" class="scroll">Xem chi tiết</a>
+					</div>
+					<div class="clear"> </div>
+			</div>
+		</div>
+		<div id="service1" class="service1 alltitle">
+			<div class="topics"><div class="container">Dịch vụ 1</div></div>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+		</div>
+		<div id="service2" class="service2 alltitle">
+			<div class="topics"><div class="container">Dịch vụ 2</div></div>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+		</div>
+		<div id="service3" class="service3 alltitle">
+			<div class="topics"><div class="container">Dịch vụ 3</div></div>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+		</div>
+		<div id="service4" class="service4 alltitle">
+			<div class="topics"><div class="container">Dịch vụ 4</div></div>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+		</div>
+		<div class="clear"></div>
+		<!-----start-team---->
+			<div id="team" class="team">
+				<div class="container">
+					<div class="team-members text-center">
+						<p>Vui lòng click các tư vấn viên sẽ hỗ trợ chi tiết cho các bạn.</p>
+						<div class="col-md-41 team-member">
+							<a class="member-pic" href="#"><img src="images/t1.jpg" title="member-name" /></a>
+							<h3><a href="#">Hà Mạnh Quyết</a></h3>
+							<span>Tư vấn viên</span>
+							<ul class="list-unstyled list-inline social-icons">
+								<li><a href="#" title=""><img src="images/social/facebook.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/skype.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/yahoo.png"></a></li>
+							</ul>
+						</div>
+						<div class="col-md-41 team-member">
+							<a class="member-pic" href="#"><img src="images/t2.jpg" title="member-name" /></a>
+							<h3><a href="#">Nguyễn Văn Nam</a></h3>
+							<span>Tư vấn viên</span>
+							<ul class="list-unstyled list-inline social-icons">
+								<li><a href="#" title=""><img src="images/social/facebook.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/skype.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/yahoo.png"></a></li>
+							</ul>
+						</div>
+						<div class="col-md-41 team-member">
+							<a class="member-pic" href="#"><img src="images/t3.jpg" title="member-name" /></a>
+							<h3><a href="#">Đặng Quốc Việt</a></h3>
+							<span>Tư vấn viên</span>
+							<ul class="list-unstyled list-inline social-icons">
+								<li><a href="#" title=""><img src="images/social/facebook.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/skype.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/yahoo.png"></a></li>
+							</ul>
+						</div>
+						<div class="col-md-41 team-member">
+							<a class="member-pic" href="#"><img src="images/t4.jpg" title="member-name" /></a>
+							<h3><a href="#">Lê Kim Long</a></h3>
+							<span>Tư vấn viên</span>
+							<ul class="list-unstyled list-inline social-icons">
+								<li><a href="#" title=""><img src="images/social/facebook.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/skype.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/yahoo.png"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-team----->
+		<!----//End-service----->
+		<div class="top-header">
+			<div class="container">
+				<p class="m_1"><span class="m_2"></span></p>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		<!----start-copy-right-->
+		<div class="copy-right">
+			<div class="container">
+				<p><a href="#">WEBSMARTVN.COM</a></p>
+				<p>Thiết kế web giá rẻ, uy tín và chất lượng</p>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$().UItoTop({ easingType: 'easeOutQuart' });
+							
+					});
+				</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<!----//End-copy-right--->
+		<!----//End-container------>
+	</div>
+</body>
+</html>

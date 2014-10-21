@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>
+	<title>WEBSMARTVN.COM | Home </title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+	<!----start-top-nav-script---->
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+	        	var w = $(window).width();
+	        	if(w > 320 && menu.is(':hidden')) {
+	        		menu.removeAttr('style');
+	        	}
+	    	});
+		});
+	</script>
+	<!----//End-top-nav-script---->
+</head>
+<body>
+	<div class="wrap">
+		<!----start-container------>
+		<!----start-header---->
+		<div id="home" class="header">
+				<div class="container">
+					<!----start-top-nav---->
+					<nav class="top-nav">
+						<ul class="top-nav">
+							<li class=""><a href="about.html" >Giới thiệu</a></li>
+							<li class=""><a href="service.html" >Dịch vụ</a></li>
+							<li class=""><a href="guest.html" >Khách hàng</a></li>
+							<li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
+							<li class=""><a href="blog.html" >Bài viết</a></li>
+							<li class=""><a href="categoryweb.html" >Danh mục web</a></li>
+							<li class=""><a href="contact.html" >Liên hệ</a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon2.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+					<!----//End-top-nav---->
+				</div>
+		</div>
+		<div class="top-header">
+				<div class="container">
+					<p class="m_1"><span class="m_2"></span></p>
+					<div class="clear"> </div>
+				</div>
+		</div>
+		<!----//End-header---->
+		<!----start-about---->
+		<div class="devider">
+			<img src="images/shadow.png">
+		</div>
+		<div id="about" class="about">
+			<div class="container">
+				<p class="wellcome-note-head"><label>Cám ơn các bạn đã ghé thăm  <span>WEBSMARTVN.COM</span>. </label>Hy vọng các bạn cảm thấy hài lòng với những gì chúng tôi đưa ra và hợp tác với chúng tôi. Xin chân thành cám ơn.</p>
+				<p class="wellcome-note-info">Hãy liên hệ ngay với chúng tôi!.Follow us!!</p>
+				<!----start-about-grids---->
+				<div class="about-grids">
+					<div class="col-md-3 about-grid">
+						<a href="#" title=""><img src="images/social/facebook.png"></a>
+					</div>
+					<div class="col-md-3 about-grid">
+						<a href="#" title=""><img src="images/social/google+.png"></a>
+					</div>
+					<div class="col-md-3 about-grid">
+						<a href="#" title=""><img src="images/social/skype.png"></a>
+					</div>
+					<div class="col-md-3 about-grid">
+						<a href="#" title=""><img src="images/social/youtube.png"></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!----//End-about-grids---->
+		</div>
+		<!----//End-about----->
+		<!----start-contact---->
+		<div class="topics"><div class="container">LIÊN HỆ</div></div>
+		<div id="contact" class="contact">
+			<div class="container">
+				<div class="contact-grids">
+					<div class="col-md-6 contact-grid-left">
+						<form method="post" action="contact-post.html">
+							<input type="text" value="Họ tên " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+							<input type="text" value="Tiêu đề" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+							<textarea onfocus="if(this.value == 'Your Message here....') this.value='';" onblur="if(this.value == '') this.value='Your Message here....;">Bình luận....</textarea>
+							<span class="clear-btn"><input type="submit" value="NHẬP LẠI"></span>
+							<span class="submit-btn"><input type="submit" value="GỬI"></span>
+						</form>
+					</div>
+					<!---->
+					<div class="col-md-6 contact-grid-right">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3146627.8634626623!2d-96.59883788421166!3d39.629933318909686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1399976101005" > </iframe>
+						<div class="col-md-4">
+							<h5>Số điện thoại</h5>
+							<span>0166 5858 0xx</span>
+						</div>
+						<div class="col-md-4">
+							<h5>Địa chỉ</h5>
+							<span>Đại học Công Nghiệp TP HCM</span>
+						</div>
+						<div class="col-md-4">
+							<h5>Email</h5>
+							<span><a href="#">websmartvn@gmail.com</a></span>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!-----start-contact-social---->
+				<!-----//End-contact-social---->
+			</div>
+		</div>
+		<!----//End-contact---->
+		<div class="top-header">
+			<div class="container">
+				<p class="m_1"><span class="m_2"></span></p>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		<!----start-copy-right-->
+		<div class="copy-right">
+			<div class="container">
+				<p><a href="#">WEBSMARTVN.COM</a></p>
+				<p>Thiết kế web giá rẻ, uy tín và chất lượng</p>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$().UItoTop({ easingType: 'easeOutQuart' });
+							
+					});
+				</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<!----//End-copy-right--->
+		<!----//End-container------>
+	</div>
+</body>
+</html>

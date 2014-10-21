@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>
+	<title>WEBSMARTVN.COM | Danh mục web </title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+	<!----start-top-nav-script---->
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+	        	var w = $(window).width();
+	        	if(w > 320 && menu.is(':hidden')) {
+	        		menu.removeAttr('style');
+	        	}
+	    	});
+		});
+	</script>
+	<!----//End-top-nav-script---->
+</head>
+<body>
+	<div class="wrap">
+		<!----start-container------>
+		<!----start-header---->
+		<div id="home" class="header">
+				<div class="container">
+					<!----start-top-nav---->
+					<nav class="top-nav">
+						<ul class="top-nav">
+							<li class=""><a href="about.html" >Giới thiệu</a></li>
+							<li class=""><a href="service.html" >Dịch vụ</a></li>
+							<li class=""><a href="guest.html" >Khách hàng</a></li>
+							<li class="logo"><a href="index.html"><img src="images/logo.png" alt=""/></a></li>
+							<li class=""><a href="blog.html" >Bài viết</a></li>
+							<li class=""><a href="categoryweb.html" >Danh mục web</a></li>
+							<li class=""><a href="contact.html" >Liên hệ</a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon2.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+					<!----//End-top-nav---->
+				</div>
+		</div>
+		<div class="top-header">
+				<div class="container">
+					<p class="m_1"><span class="m_2"></span></p>
+					<div class="clear"> </div>
+				</div>
+		</div>
+		<!----//End-header---->
+		<!----start-portfolio---->
+		<div class="title-dmsp">
+			<div class="topics"><div class="container">Đa dạng các mẫu giao diện đơn giản và đẹp mắt phù hợp với các tùy chọn của khách hàng.</div></div>
+			<div class="topics1"><div class="container">Ngoài ra các giao diện có thể thay đổi theo yêu cầu của khách hàng.</div></div>
+		</div>
+		<div id="port" class="portfolio portfolio-box">
+			<div class="container">
+				<!-- <h3>Danh mục web</h3> -->
+				<label> </label>
+				<!----start-portfolio---->
+	         	<div id="port" class="container portfolio-main">
+		        	<!---- start-portfolio-script---->
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+							$(function () {
+								var filterList = {
+									init: function () {
+									
+										// MixItUp plugin
+										// http://mixitup.io
+										$('#portfoliolist').mixitup({
+											targetSelector: '.portfolio',
+											filterSelector: '.filter',
+											effects: ['fade'],
+											easing: 'snap',
+											// call the hover effect
+											onMixEnd: filterList.hoverEffect()
+										});				
+									
+									},
+									hoverEffect: function () {
+										// Simple parallax effect
+										$('#portfoliolist .portfolio').hover(
+											function () {
+												$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+												$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+											},
+											function () {
+												$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+												$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+											}		
+										);				
+									
+									}
+						
+								};
+								// Run the show!
+								filterList.init();
+							});	
+					</script>
+					<!----//End-portfolio-script---->
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="bh cn tt dn">Tất cả</span></li>
+						<li><span class="filter" data-filter="bh">Bán hàng</span></li>
+						<li><span class="filter" data-filter="cn">Cá nhân</span></li>
+						<li><span class="filter" data-filter="tt">Tin tức</span></li>
+						<li><span class="filter" data-filter="dn">Doanh nghiệp</span></li>
+					</ul>
+					<div id="portfoliolist">
+							<div class="portfolio bh mix_all" data-cat="bh" style="display: inline-block; opacity: 1;">
+				                <div class="portfolio-wrapper">				
+									<a href="images/p1.jpg" class="flipLightBox">
+										<img src="images/p1.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>				
+							<div class="portfolio tt mix_all" data-cat="tt" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">				
+									<a href="images/p2.jpg" class="flipLightBox">
+										<img src="images/p2.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>		
+							<div class="portfolio cn mix_all" data-cat="cn" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">				
+									<a href="images/p3.jpg" class="flipLightBox">
+										<img src="images/p3.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>				
+							<div class="portfolio dn mix_all" data-cat="dn" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">				
+									<a href="images/p4.jpg" class="flipLightBox">
+										<img src="images/p4.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio bh mix_all" data-cat="bh" style="display: inline-block; opacity: 1;">
+				                <div class="portfolio-wrapper">				
+									<a href="images/p1.jpg" class="flipLightBox">
+										<img src="images/p1.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>		
+							<div class="portfolio tt mix_all" data-cat="tt" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">				
+									<a href="images/p5.jpg" class="flipLightBox">
+										<img src="images/p5.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>			
+							<div class="portfolio cn mix_all" data-cat="cn" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">				
+									<a href="images/p6.jpg" class="flipLightBox">
+										<img src="images/p6.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>	
+							<div class="portfolio bh mix_all" data-cat="bh" style="display: inline-block; opacity: 1;">
+				                <div class="portfolio-wrapper">				
+									<a href="images/p1.jpg" class="flipLightBox">
+										<img src="images/p1.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>	
+							<div class="portfolio bh mix_all" data-cat="bh" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">				
+									<a href="images/p7.jpg" class="flipLightBox">
+										<img src="images/p7.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>	
+							<div class="portfolio dn mix_all" data-cat="dn" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">				
+									<a href="images/p8.jpg" class="flipLightBox">
+										<img src="images/p8.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>			
+							<div class="portfolio tt mix_all" data-cat="tt" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">				
+									<a href="images/p4.jpg" class="flipLightBox">
+										<img src="images/p4.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio bh mix_all" data-cat="bh" style="display: inline-block; opacity: 1;">
+				                <div class="portfolio-wrapper">				
+									<a href="images/p1.jpg" class="flipLightBox">
+										<img src="images/p1.jpg"  alt="Image 2" />
+									</a>
+									<div class="label">
+										<div class="label-text">
+											<a class="text-title">XEM CHI TIẾT</a>
+											<span class="text-category">Loại website</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>	
+							<div class="clearfix"> </div>	
+							<a class="more-ports text-center" href="#"><span> </span></a>																																				
+					</div>
+					<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+					<script type="text/javascript">$('body').flipLightBox()</script>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clear"></div>
+		<!-----start-team---->
+			<div id="team" class="team">
+				<div class="container">
+					<div class="team-members text-center">
+						<p>Vui lòng click các tư vấn viên sẽ hỗ trợ chi tiết cho các bạn.</p>
+						<div class="col-md-41 team-member">
+							<a class="member-pic" href="#"><img src="images/t1.jpg" title="member-name" /></a>
+							<h3><a href="#">Hà Mạnh Quyết</a></h3>
+							<span>Tư vấn viên</span>
+							<ul class="list-unstyled list-inline social-icons">
+								<li><a href="#" title=""><img src="images/social/facebook.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/skype.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/yahoo.png"></a></li>
+							</ul>
+						</div>
+						<div class="col-md-41 team-member">
+							<a class="member-pic" href="#"><img src="images/t2.jpg" title="member-name" /></a>
+							<h3><a href="#">Nguyễn Văn Nam</a></h3>
+							<span>Tư vấn viên</span>
+							<ul class="list-unstyled list-inline social-icons">
+								<li><a href="#" title=""><img src="images/social/facebook.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/skype.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/yahoo.png"></a></li>
+							</ul>
+						</div>
+						<div class="col-md-41 team-member">
+							<a class="member-pic" href="#"><img src="images/t3.jpg" title="member-name" /></a>
+							<h3><a href="#">Đặng Quốc Việt</a></h3>
+							<span>Tư vấn viên</span>
+							<ul class="list-unstyled list-inline social-icons">
+								<li><a href="#" title=""><img src="images/social/facebook.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/skype.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/yahoo.png"></a></li>
+							</ul>
+						</div>
+						<div class="col-md-41 team-member">
+							<a class="member-pic" href="#"><img src="images/t4.jpg" title="member-name" /></a>
+							<h3><a href="#">Lê Kim Long</a></h3>
+							<span>Tư vấn viên</span>
+							<ul class="list-unstyled list-inline social-icons">
+								<li><a href="#" title=""><img src="images/social/facebook.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/skype.png"></a></li>
+								<li><a href="#" title=""><img src="images/social/yahoo.png"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-----//End-team----->
+	    <!----//End-portfolio---->
+		<div class="top-header">
+			<div class="container">
+				<p class="m_1"><span class="m_2"></span></p>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		<!----start-copy-right-->
+		<div class="copy-right">
+			<div class="container">
+				<p><a href="#">WEBSMARTVN.COM</a></p>
+				<p>Thiết kế web giá rẻ, uy tín và chất lượng</p>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$().UItoTop({ easingType: 'easeOutQuart' });
+							
+					});
+				</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<!----//End-copy-right--->
+		<!----//End-container------>
+	</div>
+</body>
+</html>
